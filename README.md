@@ -1,10 +1,11 @@
 # react-developing-with-JavaScript
 An react course done on  Alura: https://cursos.alura.com.br/
 
-### course:https://cursos.alura.com.br/formacao-carreira-tester-qa
+### course:https://cursos.alura.com.br/course/react-desenvolvendo-javascript/task/104221
 
 #### Objectives:
-- Acquiring theoretical knowledge of what it means to be a QA
-- Acquiring the foundation to start automating tests
-- Agile testing: the QA person and agility
-- Hands-on code and test automation
+- Describe the advantages of using React
+- Implement reactive components
+- Investigate and analyze error messages
+- Modify and evolve components according to the project's needs
+- Prototype an application from scratch to deploy
