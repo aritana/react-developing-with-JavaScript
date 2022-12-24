@@ -1,11 +1,12 @@
-# react-developing-with-JavaScript
+# Design Patterns in Java I: good programming practices
 An react course done on  Alura: https://cursos.alura.com.br/
 
-### course:https://cursos.alura.com.br/course/react-desenvolvendo-javascript/task/104221
+### course:https://cursos.alura.com.br/course/introducao-design-patterns-java/task/85645
 
 #### Objectives:
-- Describe the advantages of using React
-- Implement reactive components
-- Investigate and analyze error messages
-- Modify and evolve components according to the project's needs
-- Prototype an application from scratch to deploy
+- Don't repeat code with Template Method
+- Learn the importance of studying design patterns
+- Solve many ifs problems using Strategy
+- Add behaviors to your object with Decorator
+- Create different actions with Observer
+- Use Builder for creating complicated objects
