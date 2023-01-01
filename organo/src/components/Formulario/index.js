@@ -3,7 +3,7 @@ import Botao from '../Botao';
 import CampoTexto from '../CampoTexto/CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css'
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = ['Programação',
         'Front-End',
@@ -11,6 +11,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
+        props.aoColaboradorAdicionado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
         console.log('Form foi submetido=>', nome, cargo, imagem,time)
     }
 
