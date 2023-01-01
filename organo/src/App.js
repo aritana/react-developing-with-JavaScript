@@ -51,7 +51,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Formulario aoColaboradorAdicionado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+        <Formulario times={times.map(time => time.nome)} aoColaboradorAdicionado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+
         {times.map(time => <Time
           key={time.nome}
           nome={time.nome}
