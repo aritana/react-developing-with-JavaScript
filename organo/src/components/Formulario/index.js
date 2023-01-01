@@ -12,7 +12,10 @@ const Formulario = (props) => {
             imagem,
             time
         })
-        console.log('Form foi submetido=>', nome, cargo, imagem, time)
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     const [nome, setNome] = useState('')

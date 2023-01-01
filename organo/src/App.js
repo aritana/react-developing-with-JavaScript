@@ -53,11 +53,12 @@ function App() {
       <header className="App-header">
         <Formulario times={times.map(time => time.nome)} aoColaboradorAdicionado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
 
-        {times.map(time => <Time
-          key={time.nome}
+        {times.map(time => <Time    
+          key={time.corPrimaria} 
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter(colaborador=>colaborador.time === time.nome)}
         />)}
       </header>
     </div>
