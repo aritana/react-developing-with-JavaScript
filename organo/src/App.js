@@ -44,6 +44,7 @@ function App() {
   const [colaboradores, setColaboradores] = useState([''])
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
+    debugger
     setColaboradores([...colaboradores, colaborador])
     console.log(colaborador)
   }
@@ -54,7 +55,7 @@ function App() {
         <Formulario times={times.map(time => time.nome)} aoColaboradorAdicionado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
 
         {times.map(time => <Time    
-          key={time.corPrimaria} 
+          key={time.nome} 
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
