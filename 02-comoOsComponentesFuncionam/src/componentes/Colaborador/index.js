@@ -7,7 +7,6 @@ const Colaborador = ({ colaborador, corDeFundo, aoDeletar }) => {
             size={25}
             className='deletar'     
             onClick={()=>{
-                console.log(colaborador.id);
                 return aoDeletar(colaborador.id)
             }}
         />
