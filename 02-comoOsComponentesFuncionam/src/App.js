@@ -8,44 +8,52 @@ import { v4 as uuidv4 } from 'uuid';
 function App() {
   const [times, setTimes] = useState([
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Programação',
       cor: '#D9F7E9'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Front-End',
       cor: '#E8F8FF'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Data Science',
       cor: '#F0F8E2'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Devops',
       cor: '#FDE7E8'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'UX e Design',
       cor: '#FAE9F5'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Mobile',
       cor: '#FFF5D9'
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'Inovação e Gestão',
       cor: '#FFEEDF'
-    },
+    }
   ])
 
   const inicial = [
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -53,6 +61,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -60,6 +69,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -67,6 +77,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -74,6 +85,7 @@ function App() {
       time: times[0].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -81,6 +93,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -88,6 +101,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -95,6 +109,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -102,6 +117,7 @@ function App() {
       time: times[1].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -109,6 +125,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -116,6 +133,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -123,6 +141,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -130,6 +149,7 @@ function App() {
       time: times[2].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -137,6 +157,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -144,6 +165,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -151,6 +173,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -158,6 +181,7 @@ function App() {
       time: times[3].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -165,6 +189,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -172,6 +197,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -179,6 +205,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -186,6 +213,7 @@ function App() {
       time: times[4].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'JULIANA AMOASEI',
       cargo: 'Desenvolvedora de software e instrutora',
@@ -193,6 +221,7 @@ function App() {
       time: times[5].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'DANIEL ARTINE',
       cargo: 'Engenheiro de Software na Stone Age',
@@ -200,6 +229,7 @@ function App() {
       time: times[5].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'GUILHERME LIMA',
       cargo: 'Desenvolvedor Python e JavaScript na Alura',
@@ -207,6 +237,7 @@ function App() {
       time: times[5].nome
     },
     {
+      favorito: false,
       id: uuidv4(),
       nome: 'PAULO SILVEIRA',
       cargo: 'Hipster e CEO da Alura',
@@ -230,9 +261,16 @@ function App() {
     }))
   }
 
-  function cadastrarTime(novoTime) {   
+  function cadastrarTime(novoTime) {
     console.log(novoTime)
-    setTimes([...times, {...novoTime,id:uuidv4()}])
+    setTimes([...times, { ...novoTime, id: uuidv4() }])
+  }
+
+  function resolverFavorito(id) {
+    setColaboradores(colaboradores.map(colaborador => {
+      if (colaborador.id === id) colaborador.favorito = !colaborador.favorito;
+      return colaborador
+    }))
   }
 
   return (
@@ -247,6 +285,7 @@ function App() {
         <h1>Minha organização</h1>
         {times.map((time, indice) =>
           <Time
+            aoFavoritar={resolverFavorito}
             key={indice}
             time={time}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
