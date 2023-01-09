@@ -2,7 +2,7 @@ import React from 'react'
 import open from './open.png'
 import favorito from './favorito.png'
 
-export default function Card({item, index, styles}) {
+export default function Card({item, styles}) {
     return (
         <li key={item.id} className={styles.galeria__card}>
             <img
