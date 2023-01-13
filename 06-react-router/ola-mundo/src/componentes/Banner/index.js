@@ -1,8 +1,8 @@
 import styles from "./Banner.module.css";
 
 import React from "react";
-import circuloColorido from "assets/circulo_colorido.png";
-import minhaFoto from "assets/minha_foto.jpg";
+import circuloColorido from "assets/img/circulo_colorido.png";
+import minhaFoto from "assets/img/minha_foto.jpg";
 
 export default function Banner() {
   return (
@@ -10,7 +10,7 @@ export default function Banner() {
       <div className={styles.apresentacao}>
         <h1 className={styles.titulo}>Olá, Mundo!</h1>
         <p className={styles.paragrafo}>
-          Boas vindas ao meu espaço! Sou o Aritana Noara.
+          Boas vindas ao meu espaço! Sou o Aritana Noara C Santos.
         </p>
       </div>
       <div className={styles.imagens}>
