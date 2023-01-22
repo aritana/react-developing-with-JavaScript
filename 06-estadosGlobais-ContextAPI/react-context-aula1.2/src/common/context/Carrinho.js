@@ -29,19 +29,34 @@ export const useCarrinhoContext = () => {
       ]);
     }
     /*caso tenha o produto*/
-    setCarrinho((carrinhoAnterior) =>
-      carrinhoAnterior.map((itemCarrinho) => {
-        if (itemCarrinho.id === novoProduto.id) {
-          itemCarrinho.quantidade++;
-        }
-        return itemCarrinho;
-      })
-    );
+    setCarrinho(mudarQuantidade(novoProduto.id, 1));
+  }
+
+  function mudarQuantidade(id, quantidade) {
+    return carrinho.map((itemDoCarrinho) => {
+      if (itemDoCarrinho.id === id) {
+        itemDoCarrinho.quantidade += quantidade;
+      }
+      return itemDoCarrinho;
+    });
+  }
+
+  function removerProduto(id) {
+    const produto = carrinho.find((itemCarrinho) => itemCarrinho.id === id);
+    const ehOUltimo = produto.quantidade === 1; //true se quantidade for 1
+
+    if (ehOUltimo) {
+      return setCarrinho((carrinhoAnterior) =>
+        carrinhoAnterior.filter((itemCarrinho) => itemCarrinho.id !== id)
+      );
+    }
+    setCarrinho(mudarQuantidade(id, -1));
   }
 
   return {
     carrinho,
     setCarrinho,
-    adicionarProduto
+    adicionarProduto,
+    removerProduto,
   };
 };
