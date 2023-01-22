@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 /*Criação contexto do carrinho*/
 export const CarrinhoContext = createContext();
@@ -6,15 +6,24 @@ CarrinhoContext.displayName = "Carrinho";
 
 export const CarrinhoProvider = ({ children }) => {
   const [carrinho, setCarrinho] = useState([]);
+  const [quantidadeProdutos, setQUantidadeProdutos] = useState(0); //usado no listener
   return (
-    <CarrinhoContext.Provider value={{ carrinho, setCarrinho }}>
+    <CarrinhoContext.Provider
+      value={{
+        carrinho,
+        setCarrinho,
+        quantidadeProdutos,
+        setQUantidadeProdutos,
+      }}
+    >
       {children}
     </CarrinhoContext.Provider>
   );
 };
 
 export const useCarrinhoContext = () => {
-  const { carrinho, setCarrinho } = useContext(CarrinhoContext);
+  const { carrinho, setCarrinho, quantidadeProdutos, setQUantidadeProdutos } =
+    useContext(CarrinhoContext);
 
   function adicionarProduto(novoProduto) {
     const temOProduto = carrinho.some(
@@ -52,11 +61,21 @@ export const useCarrinhoContext = () => {
     }
     setCarrinho(mudarQuantidade(id, -1));
   }
+  //listener, entre colchetes é inserido o objeto a ser escutado
+  useEffect(() => {
+    const novaQuantidade = carrinho.reduce(
+      (contador, produto) => contador + produto.quantidade,
+      0
+    );
+    setQUantidadeProdutos(novaQuantidade);
+  }, [carrinho,setQUantidadeProdutos]);
 
   return {
     carrinho,
     setCarrinho,
     adicionarProduto,
     removerProduto,
+    quantidadeProdutos,
+    setQUantidadeProdutos
   };
 };

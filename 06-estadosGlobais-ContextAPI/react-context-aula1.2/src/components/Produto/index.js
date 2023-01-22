@@ -8,13 +8,10 @@ import { useCarrinhoContext } from "common/context/Carrinho";
 function Produto({ nome, foto, id, valor, unidade }) {
   const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
 
-  //encontrar prodto para exibir a sua quantidade.
+  //encontrar produto para exibir a sua quantidade.
   const produtoNoCarrinho = carrinho.find(
     (itemDoCarrinho) => itemDoCarrinho.id === id
   );
-
-  console.log(produtoNoCarrinho)
-
   return (
     <Container>
       <div>
